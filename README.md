@@ -15,6 +15,8 @@ The complete replacement for remindfulnessapp.com: six pages, one stylesheet, no
 - recovery-hero.png — panel 1 of the Recovery set (purple)
 - twinflame-hero.png — panel 1 of the Twin Flame set (peach)
 - book.png — the book cover mockup
+- head-logo.png — the head/clock logo, transparent background (shows in the header; ~120px tall is plenty)
+- wordmark.png — the "remindfulness" word logo, transparent background (header; ~80px tall is plenty)
 Until an image exists, its slot hides itself automatically, so the site works from day one.
 
 ## Two TODOs in the code
