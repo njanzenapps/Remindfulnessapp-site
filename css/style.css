@@ -72,7 +72,8 @@ nav.main a:hover, nav.main a[aria-current="page"] { color: var(--ink); }
 nav.main a:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; }
 
 /* ---------- hero ---------- */
-.hero { padding: 72px 0 56px; text-align: center; }
+.hero { padding: 46px 0 56px; text-align: center; }
+.hero-lockup { max-width: 300px; margin: 0 auto 30px; border-radius: 24px; overflow: hidden; box-shadow: 0 18px 50px rgba(43,46,51,0.16); }
 .hero h1 {
   font-family: var(--display); font-weight: 700; text-transform: uppercase;
   font-size: clamp(2.3rem, 6.5vw, 4.2rem); line-height: 1.04;
@@ -170,6 +171,7 @@ nav.main a:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; }
 
 /* ---------- edition page hero ---------- */
 .ed-hero { padding: 70px 0 56px; text-align: center; }
+body.classic .ed-hero h1, body.recovery .ed-hero h1, body.twinflame .ed-hero h1, body.classic .ed-hero .sub, body.recovery .ed-hero .sub, body.twinflame .ed-hero .sub, body.classic .ed-hero .eyebrow, body.recovery .ed-hero .eyebrow, body.twinflame .ed-hero .eyebrow { text-shadow: 0 1px 14px rgba(0,0,0,0.18); }
 .ed-hero .hero-shot { margin-bottom: -30px; }
 .ed-hero .eyebrow { font-size: 0.85rem; letter-spacing: 0.24em; text-transform: uppercase; color: var(--ink-soft); }
 .ed-hero h1 { font-family: var(--display); font-weight: 700; text-transform: uppercase; font-size: clamp(2.2rem, 6vw, 3.6rem); margin-top: 14px; line-height: 1.05; color: #ffffff; }
@@ -177,9 +179,9 @@ nav.main a:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; }
 
 
 
-body.classic .ed-hero { background: var(--cyan); } body.classic .ed-hero .eyebrow, body.classic .ed-hero .sub { color: #ffffff; }
-body.recovery .ed-hero { background: var(--purple); } body.recovery .ed-hero .eyebrow, body.recovery .ed-hero .sub { color: #ffffff; }
-body.twinflame .ed-hero { background: var(--peach); } body.twinflame .ed-hero .eyebrow, body.twinflame .ed-hero .sub { color: #ffffff; }
+body.classic .ed-hero { background: var(--cyan) url('../assets/classic-banner.jpg') left center/cover no-repeat; } body.classic .ed-hero .eyebrow, body.classic .ed-hero .sub { color: #ffffff; }
+body.recovery .ed-hero { background: var(--purple) url('../assets/recovery-banner.jpg') left center/cover no-repeat; } body.recovery .ed-hero .eyebrow, body.recovery .ed-hero .sub { color: #ffffff; }
+body.twinflame .ed-hero { background: var(--peach) url('../assets/twinflame-banner.jpg') left center/cover no-repeat; } body.twinflame .ed-hero .eyebrow, body.twinflame .ed-hero .sub { color: #ffffff; }
 
 .prose { max-width: 700px; margin: 0 auto; padding: 0 22px 30px; }
 .prose p { margin-bottom: 20px; }
@@ -230,3 +232,22 @@ footer.site h4 { font-weight: 500; font-size: 0.82rem; letter-spacing: 0.2em; te
 footer.site a { color: #e6e8eb; text-decoration: underline; text-underline-offset: 3px; }
 footer.site p { margin-bottom: 6px; }
 footer.site .fine { grid-column: 1 / -1; border-top: 1px solid #43474e; padding-top: 22px; color: #9aa0a8; }
+
+
+/* ---------- decorative objects (from the apps) ---------- */
+.deco { position: absolute; pointer-events: none; user-select: none; z-index: 3; }
+.verb-band { position: relative; overflow: visible; }
+.card-deco { width: clamp(64px, 9vw, 96px); }
+.panel.classic .card-deco { top: -18px; left: -14px; transform: rotate(-12deg); }
+.panel.recovery .card-deco { top: -16px; right: -12px; transform: rotate(8deg); }
+.panel.twinflame .card-deco { bottom: -20px; right: -10px; transform: rotate(-8deg); }
+.ed-hero { position: relative; overflow: hidden; }
+.hero-deco { width: clamp(90px, 16vw, 190px); }
+.classic .hero-deco { top: 26px; right: 4vw; transform: rotate(6deg); }
+.recovery .hero-deco { bottom: -14px; right: 5vw; }
+.twinflame .hero-deco { top: 10px; left: 2vw; width: clamp(60px, 9vw, 110px); }
+.center-cta { position: relative; }
+.cta-deco { width: clamp(90px, 15vw, 180px); }
+.classic .cta-deco { left: 4vw; bottom: -8px; transform: rotate(-6deg); }
+.recovery .cta-deco { right: 4vw; bottom: -10px; }
+.twinflame .cta-deco { right: 3vw; bottom: -16px; transform: rotate(6deg); }
