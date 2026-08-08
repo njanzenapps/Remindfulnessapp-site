@@ -11,7 +11,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Stack+Sans+Notch:wght@500;600;700&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 <style>.video-frame { max-width: 860px; margin: 0 auto 70px; padding: 0 22px; }
-.video-frame .box { position: relative; aspect-ratio: 16/9; background: #1c1e21; border-radius: var(--radius); overflow: hidden; box-shadow: 0 16px 48px rgba(43,46,51,0.18); }
+.video-frame .box { position: relative; aspect-ratio: 4/3; background: #1c1e21; border-radius: var(--radius); overflow: hidden; box-shadow: 0 16px 48px rgba(43,46,51,0.18); }
 .video-frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
 .video-frame .placeholder { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; color: #9aa0a8; font-size: 0.95rem; }</style>
 </head>
@@ -42,8 +42,8 @@
 
   <div class="video-frame">
     <div class="box">
-      <!-- PASTE VIMEO EMBED IFRAME HERE, replacing the placeholder div below -->
-      <div class="placeholder">Video coming right up.</div>
+      <iframe src="https://player.vimeo.com/video/1216625978?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="TappingForMindfulness"></iframe>
+      <script src="https://player.vimeo.com/api/player.js"></script>
     </div>
     
   </div>
