@@ -243,9 +243,9 @@ footer.site .fine { grid-column: 1 / -1; border-top: 1px solid #43474e; padding-
 .panel.twinflame .card-deco { bottom: -20px; right: -10px; transform: rotate(-8deg); }
 .ed-hero { position: relative; overflow: hidden; }
 .hero-deco { width: clamp(90px, 16vw, 190px); }
-.classic .hero-deco { top: 26px; right: 4vw; transform: rotate(6deg); }
-.recovery .hero-deco { bottom: -14px; right: 5vw; }
-.twinflame .hero-deco { top: 10px; left: 2vw; width: clamp(60px, 9vw, 110px); }
+.classic .hero-deco { top: 20px; right: 3vw; transform: rotate(6deg); width: clamp(140px, 24vw, 300px); }
+.recovery .hero-deco { bottom: -14px; right: 4vw; width: clamp(140px, 24vw, 300px); }
+.twinflame .hero-deco { top: 0; right: 2vw; width: clamp(70px, 10vw, 130px); }
 .center-cta { position: relative; }
 .cta-deco { width: clamp(90px, 15vw, 180px); }
 .classic .cta-deco { left: 4vw; bottom: -8px; transform: rotate(-6deg); }
