@@ -183,7 +183,7 @@ body.classic .ed-hero { background: var(--cyan) url('../assets/classic-banner.jp
 body.recovery .ed-hero { background: var(--purple) url('../assets/recovery-banner.jpg') left center/cover no-repeat; } body.recovery .ed-hero .eyebrow, body.recovery .ed-hero .sub { color: #ffffff; }
 body.twinflame .ed-hero { background: var(--peach) url('../assets/twinflame-banner.jpg') left center/cover no-repeat; } body.twinflame .ed-hero .eyebrow, body.twinflame .ed-hero .sub { color: #ffffff; }
 
-.prose { max-width: 700px; margin: 0 auto; padding: 0 22px 30px; }
+.prose { max-width: 700px; margin: 0 auto; padding: 38px 22px 30px; }
 .prose p { margin-bottom: 20px; }
 .prose h2 { font-family: var(--body); font-weight: 500; font-size: 1.02rem; letter-spacing: 0.18em; text-transform: uppercase; margin: 44px 0 16px; }
 .prose .symbolism {
@@ -241,11 +241,11 @@ footer.site .fine { grid-column: 1 / -1; border-top: 1px solid #43474e; padding-
 .panel.classic .card-deco { top: -18px; left: -14px; transform: rotate(-12deg); }
 .panel.recovery .card-deco { top: -16px; right: -12px; transform: rotate(8deg); }
 .panel.twinflame .card-deco { bottom: -20px; right: -10px; transform: rotate(-8deg); }
-.ed-hero { position: relative; overflow: hidden; }
+.ed-hero { position: relative; overflow: visible; z-index: 2; }
 .hero-deco { width: clamp(90px, 16vw, 190px); }
 .classic .hero-deco { top: 20px; right: 3vw; transform: rotate(6deg); width: clamp(140px, 24vw, 300px); }
 .recovery .hero-deco { bottom: -14px; right: 4vw; width: clamp(140px, 24vw, 300px); }
-.twinflame .hero-deco { top: 0; right: 2vw; width: clamp(70px, 10vw, 130px); }
+.twinflame .hero-deco { top: 0; right: 2.5vw; width: clamp(90px, 12vw, 175px); }
 .center-cta { position: relative; }
 .cta-deco { width: clamp(90px, 15vw, 180px); }
 .classic .cta-deco { left: 4vw; bottom: -8px; transform: rotate(-6deg); }
@@ -264,3 +264,39 @@ footer.site .fine { grid-column: 1 / -1; border-top: 1px solid #43474e; padding-
   border-radius: 50%;
   clip-path: polygon(50% 0%, 59% 9%, 71% 4%, 76% 15%, 89% 14%, 89% 27%, 100% 32%, 95% 44%, 100% 55%, 91% 63%, 93% 76%, 80% 78%, 76% 90%, 63% 87%, 55% 97%, 45% 90%, 33% 95%, 27% 84%, 14% 84%, 15% 71%, 4% 65%, 9% 53%, 2% 43%, 12% 35%, 10% 22%, 23% 21%, 26% 9%, 39% 11%);
 }
+
+
+/* ---------- testimonial photos ---------- */
+.quote { position: relative; overflow: visible; padding-right: 96px; }
+.quote-photo {
+  position: absolute; right: -22px; bottom: -34px;
+  width: clamp(110px, 14vw, 170px); height: auto;
+  border-radius: 16px;
+  box-shadow: 0 14px 36px rgba(43, 46, 51, 0.22);
+  transform: rotate(2deg);
+}
+.quote:last-child .quote-photo { transform: rotate(-2deg); }
+.quotes { padding-bottom: 70px; }
+@media (max-width: 640px) {
+  .quote { padding-right: 70px; }
+  .quote-photo { right: -8px; bottom: -24px; width: 104px; }
+}
+
+
+/* ---------- BirdSend form, restyled to the site ---------- */
+.bs-form-one { max-width: none; padding: 0; border: none; background: transparent; font-family: var(--body); }
+.bs-form-one .bs-input {
+  width: 100%; height: 48px; padding: 10px 16px; margin-bottom: 10px;
+  font-family: var(--body); font-size: 0.98rem; font-weight: 300; color: var(--ink);
+  background: #ffffff; border: 1px solid var(--silver-deep); border-radius: 12px;
+}
+.bs-form-one .bs-input::placeholder { color: #a7abb2; font-style: normal; }
+.bs-form-one .bs-input:focus { outline: none; border-color: var(--cyan); }
+.bs-form-one .bs-btn {
+  width: 100%; height: 50px; margin-top: 6px; border: none; border-radius: 12px;
+  background: var(--ink); color: #ffffff; cursor: pointer;
+  font-family: var(--display); font-weight: 700; letter-spacing: 0.08em; font-size: 0.95rem;
+  transition: background 0.2s ease;
+}
+.bs-form-one .bs-btn:hover, .bs-form-one .bs-btn:focus { background: #0f9d9d; outline: none; }
+#bs-message { margin-top: 12px; font-size: 0.92rem; color: var(--ink-soft); text-align: center; }
